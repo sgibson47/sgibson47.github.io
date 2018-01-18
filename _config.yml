@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: SRG re Code
 header-img: img/home-bg.png
 email: sgibson47@gmail.com
 copyright_name: sgibson47
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Notes and thoughts as I learn
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: yogabbagibson
 github_username:  sgibson47
