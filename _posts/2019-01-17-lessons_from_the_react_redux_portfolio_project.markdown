@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Lessons from the React Redux Portfolio Project "
-date:       2019-01-17 23:46:56 +0000
+date:       2019-01-17 18:46:57 -0500
 permalink:  lessons_from_the_react_redux_portfolio_project
 ---
 
@@ -16,7 +16,7 @@ For this blog post accompanying the project, I want to discuss a couple of the c
 First, I ran into trouble when setting up the Active Record associations between models in the Rails API backend. I tried to give a model multiple belongs_to associations and learned about polymorphic associations when it didn’t work.
 Second, I had difficulty figuring out how to redirect to a newly created game’s show page after submitting the form to create it.  Solving that puzzle taught me about withRouter and the history object. 
 
-I’m hopeful that by examining these difficulties|hardships|challenges|hurdeles|failures|problems|puzzles I’ll crystalize these examples in my mind so I’ll have a better chance of applying their lessons in the future.  And, by publishing this, maybe other people can learn from my mistakes, as well. 
+I’m hopeful that by examining these challenges I’ll crystalize these examples in my mind so I’ll have a better chance of applying their lessons in the future.  And, by publishing this, maybe other people can learn from my mistakes, as well. 
 
 ## polymorphic associations 
 One of the first things I did after spinning up Play The Game’s backend with the ‘new rails <appname> --api’ command, was generate models and associate them with one another to keep track of rounds of The Game in a database.  My goal was to set up a structure that would enable me to retrieve a single game from my database and  render it as json in my backend’s response to the frontend with all the details I’d need to display the saved state of the game.
