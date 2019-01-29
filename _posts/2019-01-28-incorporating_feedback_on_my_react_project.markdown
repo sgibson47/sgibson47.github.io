@@ -32,6 +32,6 @@ Second, I made the show page’s request for game data contingent on whether the
 
 ![](https://imgur.com/a/Ty3g5Q0)
 
-With these changes in place my application is more efficient!  Thanks to Alice for the feedback and thanks to you for reading. If you’d like to look at all the code for this project, check it out its GitHub repository [here]( https://github.com/sgibson47/play-the-game). 
+With these changes in place my application is more efficient!  Thanks to Alice for the feedback and thanks to you for reading. If you’d like to look at all the code for this project, check it out its GitHub repository [here](https://github.com/sgibson47/play-the-game). 
 
 
