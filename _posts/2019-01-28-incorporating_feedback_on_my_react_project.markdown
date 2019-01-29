@@ -71,6 +71,8 @@ became this:
   }
 ```
 
+Now, instead of always requesting data about the game whose show page a user has navigated to, the application will only request the data if it is not already held in the Redux store.  
+
 With these changes in place my application is more efficient!  Thanks to Alice for the feedback and thanks to you for reading. If you’d like to look at all the code for this project, check it out its GitHub repository [here](https://github.com/sgibson47/play-the-game). 
 
 
