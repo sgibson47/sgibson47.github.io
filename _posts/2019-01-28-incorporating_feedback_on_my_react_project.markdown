@@ -26,11 +26,50 @@ Having seen the error of my ways, I set about implementing Alice’s suggestion 
 
 First, I updated the application to add the new game’s data to the Redux store when the backend provided it in response to the request creating a new game before redirecting to the new game's show page. 
 
-![](https://imgur.com/RhLsgM4)
+```
+export const newGame = (playerName, history) =>{
+  return dispatch => {
+    return fetch(`${API_URL}/games`, {
+      method: 'POST',
+      body: JSON.stringify({game:{ playerName: playerName }}),
+      headers:{
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(game => {
+        dispatch(setGame(game));
+        history.push(`/games/${game.id}`);
+      })
+      .catch(error => console.log(error))
+  }
+}
+```
+
+Inside the action creator function newGame that is called whenver the form to create a new game is submitted, I added `dispatch(setGame(game));`.  set Game is a reducer that adds the data provided to it as an argument to the Redux store. 
 
 Second, I made the show page’s request for game data contingent on whether the correct game’s data was already in the Redux store. 
 
-![](https://imgur.com/a/Ty3g5Q0)
+This lifecycle method:
+
+```
+  componentDidMount(){
+    const gameId = this.props.match.params.gameId
+    this.props.getGame(gameId)
+```
+
+became this:
+
+```
+  componentDidMount(){
+    const gameId = this.props.match.params.gameId
+    if(this.props.currentGame.id === gameId){
+
+    }else{
+      this.props.getGame(gameId)
+    }
+  }
+```
 
 With these changes in place my application is more efficient!  Thanks to Alice for the feedback and thanks to you for reading. If you’d like to look at all the code for this project, check it out its GitHub repository [here](https://github.com/sgibson47/play-the-game). 
 
