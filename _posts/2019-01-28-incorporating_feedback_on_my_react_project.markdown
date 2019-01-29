@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Incorporating Feedback on my React Project"
-date:       2019-01-29 00:03:37 +0000
+date:       2019-01-28 19:03:37 -0500
 permalink:  incorporating_feedback_on_my_react_project
 ---
 
@@ -26,11 +26,11 @@ Having seen the error of my ways, I set about implementing Alice’s suggestion 
 
 First, I updated the application to add the new game’s data to the Redux store when the backend provided it in response to the request creating a new game before redirecting to the new game's show page. 
 
-![]( https://imgur.com/RhLsgM4)
+![](https://imgur.com/RhLsgM4)
 
 Second, I made the show page’s request for game data contingent on whether the correct game’s data was already in the Redux store. 
 
-![]( https://imgur.com/a/Ty3g5Q0)
+![](https://imgur.com/a/Ty3g5Q0)
 
 With these changes in place my application is more efficient!  Thanks to Alice for the feedback and thanks to you for reading. If you’d like to look at all the code for this project, check it out its GitHub repository [here]( https://github.com/sgibson47/play-the-game). 
 
