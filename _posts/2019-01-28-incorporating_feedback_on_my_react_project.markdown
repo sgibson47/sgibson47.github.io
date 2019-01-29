@@ -56,6 +56,7 @@ This lifecycle method:
   componentDidMount(){
     const gameId = this.props.match.params.gameId
     this.props.getGame(gameId)
+	}
 ```
 
 became this:
