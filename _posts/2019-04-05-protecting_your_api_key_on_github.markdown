@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Protecting Your API Key on GitHub"
-date:       2019-04-05 22:33:51 +0000
+date:       2019-04-05 18:33:52 -0400
 permalink:  protecting_your_api_key_on_github
 ---
 
@@ -17,7 +17,7 @@ Dotenv is a module that loads environment variables from a `.env` file into `pro
 
 ### Install dotenv
 
-` npm install dotenv –save`
+` npm install dotenv --save`
 
 ### Require dotenv
 As early as you can in your app, add:
